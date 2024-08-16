@@ -99,7 +99,18 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string"
+        "valueType": "string",
+        "ui": {
+          "editor": {
+            "toolbar": [
+              "bold",
+              "italic",
+              "underline",
+              "alignment"
+            ],
+            "alignment": ["left", "center", "right"]
+          }
+        }
       },
       {
         "component": "select",

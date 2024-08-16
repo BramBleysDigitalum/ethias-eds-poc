@@ -9,8 +9,20 @@ export default function decorate(block) {
     moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-card-image';
+      } else if (div.children.length === 1 && div.children[0] instanceof HTMLParagraphElement) {
+        div.children[0].textContent.split(',').forEach((className) => block.classList.add(className.trim()));
+        div.remove();
+      } else if (div.querySelector('pre')) {
+        const legal = document.createElement('p');
+        const pre = div.querySelector('pre');
+        legal.textContent = pre.textContent;
+        legal.className = 'legal-info';
+        pre.replaceWith(legal);
+      } else {
+        div.className = 'cards-card-body';
+      }
     });
     ul.append(li);
   });
