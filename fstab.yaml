@@ -3,7 +3,3 @@ mountpoints:
     url: "https://author-p33458-e1003325.adobeaemcloud.com/bin/franklin.delivery/BramBleysDigitalum/ethias-eds-poc/main"
     type: "markup"
     suffix: ".html"
-  /quote:
-    url: "https://author-p33458-e1003325.adobeaemcloud.com/bin/franklin.delivery/BramBleysDigitalum/ethias-eds-poc/feature/quote"
-    type: "markup"
-    suffix: ".html"
