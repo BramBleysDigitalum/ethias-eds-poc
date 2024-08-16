@@ -1,5 +1,5 @@
-import {createOptimizedPicture} from '../../scripts/aem.js';
-import {moveInstrumentation} from '../../scripts/scripts.js';
+import { createOptimizedPicture } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   /* change to ul, li */
@@ -18,7 +18,7 @@ export default function decorate(block) {
         const legal = document.createElement('p');
         const pre = div.querySelector('pre');
         legal.textContent = pre.textContent;
-        legal.className = "legal-info";
+        legal.className = 'legal-info';
         pre.replaceWith(legal);
       } else {
         div.className = 'cards-card-body';
@@ -27,7 +27,7 @@ export default function decorate(block) {
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{width: '750'}]);
+    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });
