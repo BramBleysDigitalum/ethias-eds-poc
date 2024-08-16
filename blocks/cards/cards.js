@@ -11,7 +11,7 @@ export default function decorate(block) {
     [...li.children].forEach((div) => {
       if (div.children.length === 1 && div.querySelector('picture')) {
         div.className = 'cards-card-image';
-      } else if (div.children.length === 1 && div.querySelector('p')) {
+      } else if (div.children.length === 1 && div.children[0] instanceof HTMLParagraphElement) {
         div.children[0].textContent.split(',').forEach((className) => block.classList.add(className.trim()));
         div.remove();
       } else if (div.querySelector('pre')) {
