@@ -29,3 +29,42 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards.ethias > ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards.ethias > ul > li {
+  padding: 50px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 10px;
+  flex: 1 1 45%;
+}
+
+.cards.ethias > ul > li:hover {
+  border: 3px solid #069EDE;
+  cursor: pointer;
+}
+
+.cards.ethias > ul > li:first-child {
+  max-width: 400px;
+}
+
+.cards.ethias > ul > li img {
+  width: auto;
+}
+
+.cards.ethias > ul > li p {
+  font-size: 16px;
+}
+
+.cards.ethias > ul > li .legal-info {
+  color: #888888;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
