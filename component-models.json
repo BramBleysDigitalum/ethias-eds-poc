@@ -157,7 +157,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "text",
+        "name": "titleTextValue",
         "value": "",
         "label": "Text"
       },
