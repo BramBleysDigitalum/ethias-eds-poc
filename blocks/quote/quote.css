@@ -9,7 +9,6 @@
 .block.quote blockquote {
   margin: 16px;
   text-indent: 0;
-  color: green;
 }
 
 .block.quote > div:last-child > div {
@@ -28,4 +27,16 @@
   height: 5px;
   width: 30px;
   background-color: darkgray;
+}
+
+.block.quote.bg-red {
+  background-color: red;
+}
+
+.block.quote.bg-blue {
+  background-color: blue;
+}
+
+.block.quote.bg-green {
+  background-color: green;
 }
