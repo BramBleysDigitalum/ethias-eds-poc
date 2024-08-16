@@ -140,6 +140,23 @@
           }
         },
         {
+          "title": "Quote",
+          "id": "quote",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Quote",
+                  "model": "quote-model",
+                  "quote": "<p>Think, Bram! Think!</p>",
+                  "author": "Bram Bleys"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Title",
           "id": "title",
           "plugins": {
