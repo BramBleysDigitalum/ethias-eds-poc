@@ -6,19 +6,6 @@
     ]
   },
   {
-    "id": "columns",
-    "components": []
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
     "id": "section",
     "components": [
       "text",
@@ -30,6 +17,19 @@
       "columns",
       "fragment",
       "quote"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": []
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   {

@@ -1,50 +1,5 @@
 [
   {
-    "id": "title",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "select",
-        "name": "type",
-        "value": "h1",
-        "label": "Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "h1",
-            "value": "h1"
-          },
-          {
-            "name": "h2",
-            "value": "h2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
       {
@@ -212,6 +167,72 @@
         "name": "author",
         "label": "Author",
         "value": ""
+      }
+    ]
+  },
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "titleTextValue",
+        "value": "",
+        "label": "Text test"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "left",
+        "label": "Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
       }
     ]
   }
