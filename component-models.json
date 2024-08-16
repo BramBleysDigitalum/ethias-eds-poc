@@ -157,7 +157,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "jcr:title",
+        "name": "text",
         "value": "",
         "label": "Text"
       },
@@ -197,7 +197,7 @@
       {
         "component": "select",
         "name": "classes",
-        "value": "",
+        "value": "left",
         "label": "Alignment",
         "valueType": "string",
         "options": [
