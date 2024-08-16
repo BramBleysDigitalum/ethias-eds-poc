@@ -31,3 +31,7 @@
     order: unset;
   }
 }
+
+p {
+  color: red;
+}
