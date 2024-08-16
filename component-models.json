@@ -159,7 +159,7 @@
         "valueType": "string",
         "name": "titleTextValue",
         "value": "",
-        "label": "Text"
+        "label": "Text test"
       },
       {
         "component": "select",
